@@ -9,6 +9,16 @@ header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 200px;
 }
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
 
 nav {
     display: flex;
@@ -51,10 +61,25 @@ nav li a {
     font-size: 16px;
     color: #727272;
 }
-
-.btn-primary {
-    width: 180px;
-    height: 64px;
-    border-radius: 8px;
-    background: #FF900E;
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* mobile device */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
 }
